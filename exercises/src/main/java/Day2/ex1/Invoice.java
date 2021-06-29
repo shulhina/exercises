@@ -1,4 +1,4 @@
-package Day1.ex1;
+package Day2.ex1;
 
 public class Invoice {
     String partNumber;

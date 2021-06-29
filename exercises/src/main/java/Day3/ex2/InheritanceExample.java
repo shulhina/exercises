@@ -1,4 +1,4 @@
-package Day2.ex2;
+package Day3.ex2;
 
 class Animal{
 
@@ -20,7 +20,7 @@ class Dog extends Animal{
 
         }
 
-public class InheritenceExample{
+public class InheritanceExample {
 
     public static void main(String[] args){
 

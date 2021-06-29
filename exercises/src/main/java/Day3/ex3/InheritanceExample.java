@@ -1,4 +1,4 @@
-package Day2.ex3;
+package Day3.ex3;
 
 class A {
     void method_test(){
@@ -20,7 +20,7 @@ class B extends A{
 
 }
 
-public class InheritenceExample{
+public class InheritanceExample{
 
     public static void main(String[] args){
         B test = new B();
