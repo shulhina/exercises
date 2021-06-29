@@ -1,4 +1,4 @@
-package Day2.ex2;
+package day2.ex2;
 
 public class Employee {
     private String firstname;

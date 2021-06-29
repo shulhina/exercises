@@ -1,4 +1,4 @@
-package Day3.ex1;
+package day3.ex1;
 
 class Cycle{
 

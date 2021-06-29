@@ -1,4 +1,4 @@
-package Day2.ex1;
+package day2.ex1;
 
 public class InvoiceTest {
     public static void main(String[] args) {

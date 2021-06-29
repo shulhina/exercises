@@ -1,4 +1,4 @@
-package Day2.ex3;
+package day2.ex3;
 
 public class Date {
     private int month;

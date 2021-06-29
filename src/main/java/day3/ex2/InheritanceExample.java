@@ -1,4 +1,4 @@
-package Day3.ex2;
+package day3.ex2;
 
 class Animal{
 

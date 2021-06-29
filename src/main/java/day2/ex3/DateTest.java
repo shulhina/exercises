@@ -1,4 +1,4 @@
-package Day2.ex3;
+package day2.ex3;
 
 public class DateTest {
     public static void main(String[] args) {

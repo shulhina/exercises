@@ -1,4 +1,4 @@
-package Day3.ex3;
+package day3.ex3;
 
 class A {
     void method_test(){

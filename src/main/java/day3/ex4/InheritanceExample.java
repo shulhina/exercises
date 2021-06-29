@@ -1,9 +1,9 @@
-package Day3.ex5;
+package day3.ex4;
 
-abstract class Animal {
+class Animal {
     private String furColor = "furColor";
 
-    public void makeNoise(){
+    private void makeNoise(){
         System.out.println("Noise!!");
     }
 
@@ -15,21 +15,18 @@ abstract class Animal {
         this.furColor = furColor;
     }
 
-    public abstract void makeNoise(String noise);
+    public void getMakeNoise(){
+        makeNoise();
+    }
 }
 
 class Dog extends Animal{
-
-    @Override
-    public void makeNoise(String noise) {
-        System.out.println(noise);
-    }
-
 }
 
 public class InheritanceExample{
     public static void main(String[] args) {
         Dog dog = new Dog();
         System.out.println(dog.getFurColor());
+        dog.getMakeNoise();
     }
 }
