@@ -20,7 +20,7 @@ class Dog extends Animal{
 
         }
 
-public class InheritanceExample {
+public class InheritanceExample{
 
     public static void main(String[] args){
 
