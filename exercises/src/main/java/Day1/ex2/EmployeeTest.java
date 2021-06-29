@@ -1,4 +1,4 @@
-package ex2;
+package Day1.ex2;
 
 public class EmployeeTest {
     public static void main(String[] args) {

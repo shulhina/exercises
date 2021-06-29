@@ -1,4 +1,4 @@
-package ex4;
+package Day1.ex4;
 
 public class Dog {
     private String name;
