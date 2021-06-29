@@ -41,9 +41,11 @@ public class Dog {
     }
 
     @Override
-    public String toString(){
-
-        return null;
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                '}';
     }
-
 }
