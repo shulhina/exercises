@@ -1,12 +1,12 @@
 package day3.ex3;
 
 class A {
-    void method_test(){
+    void method_test() {
         System.out.println("I am method from class A");
     }
 }
 
-class B extends A{
+class B extends A {
 
     public B() {
         super.method_test();
@@ -20,9 +20,9 @@ class B extends A{
 
 }
 
-public class InheritanceExample{
+public class InheritanceExample {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         B test = new B();
 
         test.method_test();

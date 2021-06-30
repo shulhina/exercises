@@ -1,28 +1,28 @@
 package day3.ex2;
 
-class Animal{
+class Animal {
 
-        void walk(){
+    void walk() {
         System.out.println("I am walking");
-        }
+    }
 
-        }
+}
 
-class Dog extends Animal{
+class Dog extends Animal {
 
-        void eat(){
+    void eat() {
         System.out.println("I am eating");
-        }
+    }
 
-        void bark (){
-            System.out.println("I am barking");
-        }
+    void bark() {
+        System.out.println("I am barking");
+    }
 
-        }
+}
 
-public class InheritanceExample{
+public class InheritanceExample {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Dog dog = new Dog();
 

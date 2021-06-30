@@ -6,7 +6,7 @@ public class Invoice {
     int quantityPurchased;
     double itemPrice;
 
-    double getInvoiceAmount(){
+    double getInvoiceAmount() {
         return this.quantityPurchased * this.itemPrice;
     }
 

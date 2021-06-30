@@ -15,8 +15,8 @@ public class EmployeeTest {
         System.out.println("Employee2's monthly salary: " + employee2.getMonthlySalary());
         System.out.println();
 
-        employee1.setMonthlySalary(1.1* employee1.getMonthlySalary());
-        employee2.setMonthlySalary(1.1* employee2.getMonthlySalary());
+        employee1.setMonthlySalary(1.1 * employee1.getMonthlySalary());
+        employee2.setMonthlySalary(1.1 * employee2.getMonthlySalary());
 
         System.out.println("Employee1's monthly salary after 10% raise: " + employee2.getMonthlySalary());
         System.out.println("Employee2's monthly salary after 10% raise: " + employee2.getMonthlySalary());
