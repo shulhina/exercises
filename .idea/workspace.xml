@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29e95ad-860a-471a-b08c-b6cbdc79c6a6" name="Default Changelist" comment="-">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_30_2021_10_28_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_30_2021_10_28_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_30_2021_10_36_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_30_2021_10_36_AM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day4/ex4/VowelsCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day4/ex5/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day4/ex5/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day2/ex1/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/ex1/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day2/ex2/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/ex2/EmployeeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day2/ex3/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/ex3/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day2/ex4/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day2/ex4/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day3/ex1/InheritanceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/ex1/InheritanceExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day3/ex2/InheritanceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/ex2/InheritanceExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day3/ex3/InheritanceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/ex3/InheritanceExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day3/ex4/InheritanceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/ex4/InheritanceExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day3/ex5/InheritanceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day3/ex5/InheritanceExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day4/ex3/MiddleCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day4/ex3/MiddleCharacter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +55,16 @@
       <recent name="Day3.ex5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EmployeeTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager" selected="Application.CalculatorTest">
+    <configuration name="CalculatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day4.ex5.CalculatorTest" />
+      <module name="exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day4.ex5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,37 +109,11 @@
       </method>
     </configuration>
     <configuration name="InheritanceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day3.ex1.InheritanceExample" />
-      <module name="exercises1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day3.ex1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InheritanceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day3.ex4.InheritanceExample" />
       <module name="exercises1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="day3.ex4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InheritenceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day3.ex2.InheritenceExample" />
-      <module name="exercises" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day3.ex2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,13 +134,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VowelsCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day4.ex4.VowelsCounter" />
+      <module name="exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day4.ex4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalculatorTest" />
+        <item itemvalue="Application.VowelsCounter" />
         <item itemvalue="Application.EmployeeTest" />
         <item itemvalue="Application.InheritanceExample (1)" />
         <item itemvalue="Application.Dog" />
-        <item itemvalue="Application.InheritenceExample" />
-        <item itemvalue="Application.InheritanceExample" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +282,7 @@
     <MESSAGE value="- exercises 1-5 Day 3" />
     <MESSAGE value="- moving" />
     <MESSAGE value="- updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updated .gitignore" />
+    <MESSAGE value="- Day 4, ex 1 and 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Day 4, ex 1 and 3" />
   </component>
 </project>
