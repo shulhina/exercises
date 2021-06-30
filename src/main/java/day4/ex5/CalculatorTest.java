@@ -38,7 +38,8 @@ public class CalculatorTest {
             System.out.print("b: ");
             b = scan.nextDouble();
         }
-
+        
+        scan.close();
         Calculator calculator = new Calculator();
 
         // works in IntelliJ, but not in eclipse

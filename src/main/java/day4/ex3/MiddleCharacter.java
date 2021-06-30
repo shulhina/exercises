@@ -15,6 +15,7 @@ public class MiddleCharacter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String input = scan.next();
+        scan.close();
 
         System.out.println("Middle character: " + middleCharacter(input));
     }
