@@ -1,6 +1,6 @@
 package day2.ex1;
 
-public class InvoiceTest {
+class InvoiceTest {
     public static void main(String[] args) {
         Invoice invoice = new Invoice();
         invoice.setPartNumber("A22");
