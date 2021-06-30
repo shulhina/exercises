@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29e95ad-860a-471a-b08c-b6cbdc79c6a6" name="Default Changelist" comment="- Day 4, ex 5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b29e95ad-860a-471a-b08c-b6cbdc79c6a6" name="Default Changelist" comment="- solved an eclipse problem">
+      <change beforePath="$PROJECT_DIR$/src/main/java/day4/ex5/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day4/ex5/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625080868675</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="- solved an eclipse problem">
+      <created>1625087340620</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1625087340620</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +294,7 @@
     <MESSAGE value="- updated .gitignore" />
     <MESSAGE value="- Day 4, ex 1 and 3" />
     <MESSAGE value="- Day 4, ex 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Day 4, ex 5" />
+    <MESSAGE value="- solved an eclipse problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="- solved an eclipse problem" />
   </component>
 </project>

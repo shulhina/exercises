@@ -7,7 +7,7 @@ public class CalculatorTest {
         System.out.println("Choose an option:");
 
         // works in IntelliJ, but not in eclipse
-/*        System.out.print("""
+        /*System.out.print("""
                 1. increment\s
                 2. decrement\s
                 3. multiply\s
@@ -16,7 +16,8 @@ public class CalculatorTest {
                 6. add\s
                 7. subtract\s
                 8. power
-                """);*/
+                """);
+        */
 
         System.out.println("1. increment \n" +
                 "2. decrement \n" +
@@ -40,7 +41,8 @@ public class CalculatorTest {
 
         Calculator calculator = new Calculator();
 
-        switch (input) {
+        // works in IntelliJ, but not in eclipse
+/*        switch (input) {
             case 1 -> System.out.println("Answer: " + calculator.increment(a));
             case 2 -> System.out.println("Answer: " + calculator.decrement(a));
             case 3 -> System.out.println("Answer: " + calculator.multiply(a, b));
@@ -49,6 +51,33 @@ public class CalculatorTest {
             case 6 -> System.out.println("Answer: " + calculator.add(a, b));
             case 7 -> System.out.println("Answer: " + calculator.subtract(a, b));
             case 8 -> System.out.println("Answer: " + calculator.power(a, b));
+*/
+
+        switch (input) {
+            case 1:
+                System.out.println("Answer: " + calculator.increment(a));
+                break;
+            case 2:
+                System.out.println("Answer: " + calculator.decrement(a));
+                break;
+            case 3:
+                System.out.println("Answer: " + calculator.multiply(a, b));
+                break;
+            case 4:
+                System.out.println("Answer: " + calculator.divide(a, b));
+                break;
+            case 5:
+                System.out.println("Answer: " + calculator.modulus(a, b));
+                break;
+            case 6:
+                System.out.println("Answer: " + calculator.add(a, b));
+                break;
+            case 7:
+                System.out.println("Answer: " + calculator.subtract(a, b));
+                break;
+            case 8:
+                System.out.println("Answer: " + calculator.power(a, b));
+                break;
         }
     }
 }
