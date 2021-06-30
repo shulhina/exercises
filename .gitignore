@@ -39,4 +39,4 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # other
-.idea
+*.idea
