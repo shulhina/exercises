@@ -41,5 +41,6 @@ buildNumber.properties
 # other
 *.idea
 .idea/*
+/.idea/
 .idea
 **/.idea/*
