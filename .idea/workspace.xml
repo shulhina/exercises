@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29e95ad-860a-471a-b08c-b6cbdc79c6a6" name="Default Changelist" comment="-">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day4/ex4/VowelsCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day4/ex5/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day4/ex5/CalculatorTest.java" afterDir="false" />
+    <list default="true" id="b29e95ad-860a-471a-b08c-b6cbdc79c6a6" name="Default Changelist" comment="- Day 4, ex 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day4/ex3/MiddleCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day4/ex3/MiddleCharacter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +51,13 @@
       <recent name="Day3.ex5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculatorTest">
+  <component name="RunManager" selected="Application.InheritanceExample">
     <configuration name="CalculatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day4.ex5.CalculatorTest" />
       <module name="exercises" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="day4.ex5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Dog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day3.ex4.Dog" />
-      <module name="exercises1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day3.ex4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,6 +84,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Day3.ex4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InheritanceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day3.ex1.InheritanceExample" />
+      <module name="exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day3.ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CalculatorTest" />
+        <item itemvalue="Application.InheritanceExample" />
         <item itemvalue="Application.VowelsCounter" />
+        <item itemvalue="Application.CalculatorTest" />
         <item itemvalue="Application.EmployeeTest" />
         <item itemvalue="Application.InheritanceExample (1)" />
-        <item itemvalue="Application.Dog" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625066544413</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- Day 4, ex 5">
+      <created>1625080868675</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1625080868675</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +286,7 @@
     <MESSAGE value="- moving" />
     <MESSAGE value="- updated .gitignore" />
     <MESSAGE value="- Day 4, ex 1 and 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Day 4, ex 1 and 3" />
+    <MESSAGE value="- Day 4, ex 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Day 4, ex 5" />
   </component>
 </project>

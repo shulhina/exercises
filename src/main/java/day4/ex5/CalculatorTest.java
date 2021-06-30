@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class CalculatorTest {
     public static void main(String[] args) {
         System.out.println("Choose an option:");
-        System.out.print("""
+
+        // works in IntelliJ, but not in eclipse
+/*        System.out.print("""
                 1. increment\s
                 2. decrement\s
                 3. multiply\s
@@ -14,7 +16,16 @@ public class CalculatorTest {
                 6. add\s
                 7. subtract\s
                 8. power
-                """);
+                """);*/
+
+        System.out.println("1. increment \n" +
+                "2. decrement \n" +
+                "3. multiply \n" +
+                "4. divide \n" +
+                "5. modulus \n" +
+                "6. add \n" +
+                "7. subtract \n" +
+                "8. power \n");
 
         Scanner scan = new Scanner(System.in);
         int input = scan.nextInt();
