@@ -22,7 +22,7 @@ public class CalculatorTest {
 
         System.out.print("a: ");
         a = scan.nextDouble();
-        if (input >= 1 && input <= 8) {
+        if (input > 2 && input <= 8) {
             System.out.print("b: ");
             b = scan.nextDouble();
         }
