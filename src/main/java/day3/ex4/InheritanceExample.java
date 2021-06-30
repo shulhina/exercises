@@ -3,7 +3,7 @@ package day3.ex4;
 class Animal {
     private String furColor = "furColor";
 
-    private void makeNoise(){
+    private void makeNoise() {
         System.out.println("Noise!!");
     }
 
@@ -15,15 +15,15 @@ class Animal {
         this.furColor = furColor;
     }
 
-    public void getMakeNoise(){
+    public void getMakeNoise() {
         makeNoise();
     }
 }
 
-class Dog extends Animal{
+class Dog extends Animal {
 }
 
-public class InheritanceExample{
+public class InheritanceExample {
     public static void main(String[] args) {
         Dog dog = new Dog();
         System.out.println(dog.getFurColor());

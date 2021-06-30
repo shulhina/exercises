@@ -36,7 +36,7 @@ public class Dog {
         this.weight = weight;
     }
 
-    public void showExcitement(){
+    public void showExcitement() {
         System.out.println(this.name + " is wagging its tail!!!");
     }
 

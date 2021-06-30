@@ -3,7 +3,7 @@ package day3.ex5;
 abstract class Animal {
     private String furColor = "furColor";
 
-    public void makeNoise(){
+    public void makeNoise() {
         System.out.println("Noise!!");
     }
 
@@ -18,7 +18,7 @@ abstract class Animal {
     public abstract void makeNoise(String noise);
 }
 
-class Dog extends Animal{
+class Dog extends Animal {
 
     @Override
     public void makeNoise(String noise) {
@@ -27,7 +27,7 @@ class Dog extends Animal{
 
 }
 
-public class InheritanceExample{
+public class InheritanceExample {
     public static void main(String[] args) {
         Dog dog = new Dog();
 

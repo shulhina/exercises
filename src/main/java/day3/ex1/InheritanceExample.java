@@ -1,8 +1,8 @@
 package day3.ex1;
 
-class Cycle{
+class Cycle {
 
-    String define_me(){
+    String define_me() {
 
         return "a vehicle with pedals.";
 
@@ -10,19 +10,19 @@ class Cycle{
 
 }
 
-class Bike extends Cycle{
+class Bike extends Cycle {
 
-    String define_me(){
+    String define_me() {
 
         return "a cycle with an engine.";
 
     }
 
-    Bike(){
-        System.out.println("Hello I am a Bike I am "+ define_me());
+    Bike() {
+        System.out.println("Hello I am a Bike I am " + define_me());
 
         String temp = super.define_me();
-        System.out.println("My ancestor is a cycle who is "+ temp );
+        System.out.println("My ancestor is a cycle who is " + temp);
 
     }
 
