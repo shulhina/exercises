@@ -31,7 +31,7 @@ public class EnclosingCharactersAlgorithm {
         } else {
             System.out.println("Invalid");
         }
-
+        scan.close();
     }
 }
 
