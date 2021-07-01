@@ -1,12 +1,13 @@
 package day5.ex1;
 
 public class Ex1 {
-    public static void main(String[] args) {
-        System.out.println(maxCharacter("aaafbbbdeeeda"));
-        System.out.println(maxCharacter("eeddfssses"));
-        System.out.println(maxCharacter("eeddfssesee"));
-    }
 
+    /**
+     * Returns the 1st index of the maximum character.
+     *
+     * @param str user input string
+     * @return the 1st index of the maximum character
+     */
     public static int maxCharacter(String str) {
 
         // 256 characters exist
@@ -24,5 +25,11 @@ public class Ex1 {
         }
 
         return str.indexOf(result);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(maxCharacter("aaafbbbdeeeda"));
+        System.out.println(maxCharacter("eeddfssses"));
+        System.out.println(maxCharacter("eeddfssesee"));
     }
 }
