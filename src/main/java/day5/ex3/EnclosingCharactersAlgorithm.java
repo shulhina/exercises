@@ -8,7 +8,7 @@ public class EnclosingCharactersAlgorithm {
      * Checks if or every opening parenthesis, brace, bracket or
      * similar type there must be a corresponding closing type.
      *
-     * @param input string that need cheeking
+     * @param input string that need checking
      * @return 0 if valid, any other integer if invalid
      */
     public static int checkCharacters(String input) {
