@@ -25,17 +25,33 @@ public class EnclosingCharactersAlgorithm {
             for (String instance : stringArray) {
                 if (instance.matches("[{(\\[<]")) {
                     switch (instance) {
-                        case "{" -> count.put("{", count.get("{") + 1);
-                        case "(" -> count.put("(", count.get("(") + 1);
-                        case "[" -> count.put("[", count.get("[") + 1);
-                        case "<" -> count.put("<", count.get("<") + 1);
+                        case "{":
+                            count.put("{", count.get("{") + 1);
+                            break;
+                        case "(":
+                            count.put("(", count.get("(") + 1);
+                            break;
+                        case "[":
+                            count.put("[", count.get("[") + 1);
+                            break;
+                        case "<":
+                            count.put("<", count.get("<") + 1);
+                            break;
                     }
                 } else {
                     switch (instance) {
-                        case "}" -> count.put("{", count.get("{") - 1);
-                        case ")" -> count.put("(", count.get("(") - 1);
-                        case "]" -> count.put("[", count.get("[") - 1);
-                        case ">" -> count.put("<", count.get("<") - 1);
+                        case "}":
+                            count.put("{", count.get("{") - 1);
+                            break;
+                        case ")":
+                            count.put("(", count.get("(") - 1);
+                            break;
+                        case "]":
+                            count.put("[", count.get("[") - 1);
+                            break;
+                        case ">":
+                            count.put("<", count.get("<") - 1);
+                            break;
                     }
                 }
             }
