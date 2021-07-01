@@ -9,12 +9,12 @@ public class EnclosingCharactersAlgorithm {
      * similar type there must be a corresponding closing type.
      *
      * @param input string that need checking
-     * @return 0 if valid, any other integer if invalid
+     * @return true if valid, false if invalid
      */
-    public static int checkCharacters(String input) {
+    public static boolean checkCharacters(String input) {
         String[] stringArray = input.split("");
         if (stringArray[0].matches("[)}\\]>]")) {
-            return 1;
+            return false;
         } else {
             int counter = 0;
             for (String instance : stringArray) {
@@ -24,7 +24,7 @@ public class EnclosingCharactersAlgorithm {
                     counter--;
                 }
             }
-            return counter;
+            return counter == 0;
         }
     }
 
@@ -33,7 +33,7 @@ public class EnclosingCharactersAlgorithm {
         String input = scan.next();
         System.out.println("Input:" + input);
 
-        if (checkCharacters(input) == 0) {
+        if (checkCharacters(input)) {
             System.out.println("Valid");
         } else {
             System.out.println("Invalid");
