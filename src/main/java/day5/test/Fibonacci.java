@@ -4,7 +4,7 @@ public class Fibonacci {  // What is Fibonacci sequence? 0 1 1 2 3 5   map - key
 
     static long fib(long n) {
 
-        if(n <= 1) { // base case
+        if (n <= 1) { // base case
             return n;
         }
         return fib(n - 1) + fib(n - 2);

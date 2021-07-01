@@ -6,13 +6,13 @@ public class Ex1 {
         System.out.println(maxCharacter("eeddfssses"));
     }
 
-    public static int maxCharacter(String str){
+    public static int maxCharacter(String str) {
 
         // 256 characters exist
         int[] count = new int[256];
         int len = str.length();
 
-        for (int i=0; i<len; i++)
+        for (int i = 0; i < len; i++)
             count[str.charAt(i)]++;
 
         int max = -1;
