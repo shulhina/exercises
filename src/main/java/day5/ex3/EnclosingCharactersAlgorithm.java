@@ -1,5 +1,6 @@
 package day5.ex3;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class EnclosingCharactersAlgorithm {
@@ -16,15 +17,32 @@ public class EnclosingCharactersAlgorithm {
         if (stringArray[0].matches("[)}\\]>]")) {
             return false;
         } else {
-            int counter = 0;
+            HashMap<String, Integer> count = new HashMap<>();
+            count.put("{", 0);
+            count.put("(", 0);
+            count.put("[", 0);
+            count.put("<", 0);
             for (String instance : stringArray) {
                 if (instance.matches("[{(\\[<]")) {
-                    counter++;
+                    switch (instance) {
+                        case "{" -> count.put("{", count.get("{") + 1);
+                        case "(" -> count.put("(", count.get("(") + 1);
+                        case "[" -> count.put("[", count.get("[") + 1);
+                        case "<" -> count.put("<", count.get("<") + 1);
+                    }
                 } else {
-                    counter--;
+                    switch (instance) {
+                        case "}" -> count.put("{", count.get("{") - 1);
+                        case ")" -> count.put("(", count.get("(") - 1);
+                        case "]" -> count.put("[", count.get("[") - 1);
+                        case ">" -> count.put("<", count.get("<") - 1);
+                    }
                 }
             }
-            return counter == 0;
+            return count.get("{").equals(0)
+                    && count.get("(").equals(0)
+                    && count.get("[").equals(0)
+                    && count.get("<").equals(0);
         }
     }
 
@@ -41,5 +59,3 @@ public class EnclosingCharactersAlgorithm {
         scan.close();
     }
 }
-
-

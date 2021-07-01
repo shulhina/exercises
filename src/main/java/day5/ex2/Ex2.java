@@ -13,6 +13,7 @@ public class Ex2 {
      * @return 1 if valid, 0 if invalid
      */
     public boolean checkCharacters(String input) {
+        
         return input.substring(0, 1).equals(input.substring(input.length() - 1));
     }
 
