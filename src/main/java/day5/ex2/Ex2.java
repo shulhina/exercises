@@ -12,12 +12,8 @@ public class Ex2 {
      * @param input string that need checking for palindromic
      * @return 1 if valid, 0 if invalid
      */
-    public int checkCharacters(String input) {
-        if (input.substring(0, 1).equals(input.substring(input.length() - 1))) {
-            return 1;
-        } else {
-            return 0;
-        }
+    public boolean checkCharacters(String input) {
+        return input.substring(0, 1).equals(input.substring(input.length() - 1));
     }
 
     public static void main(String[] args) {
@@ -26,7 +22,7 @@ public class Ex2 {
         String input = scan.next();
         Ex2 ex = new Ex2();
 
-        if (ex.checkCharacters(input) == 1) {
+        if (ex.checkCharacters(input)) {
             System.out.println("Valid");
         } else {
             System.out.println("Invalid");
