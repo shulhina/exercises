@@ -12,9 +12,21 @@ public class Ex2 {
      * @param input string that need checking for palindromic
      * @return 1 if valid, 0 if invalid
      */
+    // didn't complete yet
     public boolean checkCharacters(String input) {
-        
-        return input.substring(0, 1).equals(input.substring(input.length() - 1));
+        int falseIterator = 0;
+        int lenByTwo;
+        if (input.length() % 2 == 0) {
+            lenByTwo = input.length() / 2;
+        } else {
+            lenByTwo = input.length() / 2 + 1;
+        }
+        for (int i = 0; i <= lenByTwo; i++) {
+            if (!input.substring(i, i + 1).equals(input.substring(input.length() - 1 - i))) {
+                falseIterator++;
+            }
+        }
+        return falseIterator == 0;
     }
 
     public static void main(String[] args) {
