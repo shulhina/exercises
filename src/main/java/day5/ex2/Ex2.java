@@ -1,8 +1,10 @@
-package day4.ex1;
+package day5.ex2;
 
 import java.util.Scanner;
 
-public class UserMainCode {
+// the same as day4.ex1
+
+public class Ex2 {
     public int checkCharacters(String input) {
         if (input.substring(0, 1).equals(input.substring(input.length() - 1))) {
             return 1;
@@ -17,9 +19,9 @@ class Main {
 
         Scanner scan = new Scanner(System.in);
         String input = scan.next();
-        UserMainCode example = new UserMainCode();
+        Ex2 ex = new Ex2();
 
-        if (example.checkCharacters(input) == 1) {
+        if (ex.checkCharacters(input) == 1) {
             System.out.println("Valid");
         } else {
             System.out.println("Invalid");

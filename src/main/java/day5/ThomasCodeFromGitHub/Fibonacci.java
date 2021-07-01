@@ -1,4 +1,4 @@
-package day5.test;
+package day5.ThomasCodeFromGitHub;
 
 public class Fibonacci {  // What is Fibonacci sequence? 0 1 1 2 3 5   map - key - value pair
 
