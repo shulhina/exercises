@@ -1,7 +1,7 @@
 package day2.ex2;
 
 public class EmployeeTest {
-    public static void main(String[] args) {
+    public static void main(String... args) {
         Employee employee1 = new Employee("Dasha", "Snigyr", 4366.89);
         Employee employee2 = new Employee("Ksenia", "Snigyr", 4788.89);
 
