@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class EnclosingCharactersAlgorithm {
 
-    public static int checkCharacters(String[] input) {
-        if (input[0].matches("[)}\\]>]")) {
+    public static int checkCharacters(String input) {
+        String[] stringArray = input.split("");
+        if (stringArray[0].matches("[)}\\]>]")) {
             return 1;
         } else {
             int counter = 0;
-            for (String instance : input) {
+            for (String instance : stringArray) {
                 if (instance.matches("[{(\\[<]")) {
                     counter++;
                 } else {
@@ -25,7 +26,7 @@ public class EnclosingCharactersAlgorithm {
         String input = scan.next();
         System.out.println("Input:" + input);
 
-        if (checkCharacters(input.split("")) == 0) {
+        if (checkCharacters(input) == 0) {
             System.out.println("Valid");
         } else {
             System.out.println("Invalid");
