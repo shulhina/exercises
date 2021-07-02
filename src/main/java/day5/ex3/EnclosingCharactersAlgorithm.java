@@ -22,6 +22,7 @@ public class EnclosingCharactersAlgorithm {
             count.put("(", 0);
             count.put("[", 0);
             count.put("<", 0);
+
             for (String instance : stringArray) {
                 if (instance.matches("[{(\\[<]")) {
                     switch (instance) {
@@ -41,17 +42,33 @@ public class EnclosingCharactersAlgorithm {
                 } else {
                     switch (instance) {
                         case "}":
-                            count.put("{", count.get("{") - 1);
-                            break;
+                            if (count.get("{") == 0) {
+                                return false;
+                            } else {
+                                count.put("{", count.get("{") - 1);
+                                break;
+                            }
                         case ")":
-                            count.put("(", count.get("(") - 1);
-                            break;
+                            if (count.get("(") == 0) {
+                                return false;
+                            } else {
+                                count.put("(", count.get("(") - 1);
+                                break;
+                            }
                         case "]":
-                            count.put("[", count.get("[") - 1);
-                            break;
+                            if (count.get("[") == 0) {
+                                return false;
+                            } else {
+                                count.put("[", count.get("[") - 1);
+                                break;
+                            }
                         case ">":
-                            count.put("<", count.get("<") - 1);
-                            break;
+                            if (count.get("<") == 0) {
+                                return false;
+                            } else {
+                                count.put("<", count.get("<") - 1);
+                                break;
+                            }
                     }
                 }
             }
