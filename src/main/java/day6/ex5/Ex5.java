@@ -2,7 +2,7 @@ package day6.ex5;
 
 import java.util.TreeSet;
 
-public class ex5 {
+public class Ex5 {
     public static void main(String[] args) {
         TreeSet<Integer> treeSet = new TreeSet<>();
         treeSet.add(9);
@@ -14,7 +14,7 @@ public class ex5 {
         System.out.println("\nOriginal list:");
         iterateTree(treeSet);
 
-        System.out.println("Lover than 7:" + treeSet.headSet(7));
+        System.out.println("Lower than 7:" + treeSet.headSet(7));
     }
 
     public static void iterateTree(TreeSet<Integer> treeSet) {

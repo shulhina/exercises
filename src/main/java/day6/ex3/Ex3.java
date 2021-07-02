@@ -1,8 +1,9 @@
 package day6.ex3;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
-public class ex3 {
+public class Ex3 {
     public static void main(String[] args) {
         ArrayList<String> colors = new ArrayList<>();
         colors.add("black");
@@ -16,8 +17,11 @@ public class ex3 {
         System.out.println("\nOriginal list:");
         iterateList(colors);
 
-        System.out.println("\nReversed list:");
+        System.out.println("\nReversed list method:");
         iterateList(reverseList(colors));
+
+        System.out.println("\nReversed list reverse in collections:");
+        Collections.reverse(colors);
     }
 
     public static ArrayList<String> reverseList(ArrayList<String> arrayList) {

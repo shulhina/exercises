@@ -2,7 +2,7 @@ package day6.ex1;
 
 import java.util.ArrayList;
 
-public class ex1 {
+public class Ex1 {
     public static void main(String[] args) {
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("black");
