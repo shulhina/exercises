@@ -20,16 +20,16 @@ public class ex3 {
         iterateList(reverseList(colors));
     }
 
-    public static ArrayList<String> reverseList(ArrayList<String> arrayList){
+    public static ArrayList<String> reverseList(ArrayList<String> arrayList) {
         ArrayList<String> reversedList = new ArrayList<>();
-        for(int i=arrayList.size()-1; i>=0;i--){
+        for (int i = arrayList.size() - 1; i >= 0; i--) {
             reversedList.add(arrayList.get(i));
         }
         return reversedList;
     }
 
-    public static void iterateList(ArrayList<String> arrayList){
-        for(String color: arrayList){
+    public static void iterateList(ArrayList<String> arrayList) {
+        for (String color : arrayList) {
             System.out.println(color);
         }
     }

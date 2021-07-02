@@ -16,8 +16,8 @@ public class ex2 {
         iterateList(colors);
     }
 
-    public static void iterateList(ArrayList<String> arrayList){
-        for(String color: arrayList){
+    public static void iterateList(ArrayList<String> arrayList) {
+        for (String color : arrayList) {
             System.out.println(color);
         }
     }
