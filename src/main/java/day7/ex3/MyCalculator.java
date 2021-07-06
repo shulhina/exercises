@@ -23,11 +23,13 @@ class MyCalculator {
         Scanner sc = new Scanner(System.in);
 
         while (sc.hasNextInt()) {
+            System.out.print("Enter A: ");
             int n = sc.nextInt();
+            System.out.print("Enter B: ");
             int p = sc.nextInt();
 
             try {
-                System.out.println(my_calculator.power(n, p));
+                System.out.println("A in power B: " + my_calculator.power(n, p));
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
