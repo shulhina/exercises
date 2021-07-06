@@ -13,7 +13,7 @@ public class ex2 {
         } catch (ArithmeticException | InputMismatchException e) {
             if (e instanceof ArithmeticException) {
                 System.out.println("java.lang.ArithmeticException: / by zero");
-            } else if (e instanceof InputMismatchException) {
+            } else {
                 System.out.println("java.util.InputMismatchException");
             }
         }
