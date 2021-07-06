@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ex1 {
     public static void main(String[] args) {
-            File file = new File("C:\\just_random_file.txt");
+        File file = new File("C:\\just_random_file.txt");
         Scanner myReader = null;
         try {
             myReader = new Scanner(file);
@@ -14,10 +14,10 @@ public class ex1 {
             System.out.println("Something went wrong: " + e.getMessage());
         }
         StringBuilder data = new StringBuilder();
-            while(myReader != null && myReader.hasNextLine()){
-                data.append(myReader.nextLine());
-                data.append("\n");
-            }
-            System.out.println(data);
+        while (myReader != null && myReader.hasNextLine()) {
+            data.append(myReader.nextLine());
+            data.append("\n");
+        }
+        System.out.println(data);
     }
 }
