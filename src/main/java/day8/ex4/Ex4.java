@@ -7,13 +7,22 @@ public class Ex4 {
 }
 
 class BankAccount {
-    String owner;
+    public String owner;
+    public int balance;
+
+    public void deposit(int amount) {
+        this.balance += amount;
+    }
+
+    public void withdrawal(int amount) {
+        this.balance -= amount;
+    }
 }
 
-class CheckingAccount {
+class CheckingAccount extends BankAccount {
 
 }
 
-class SavingsAccount {
+class SavingsAccount extends BankAccount {
 
 }
