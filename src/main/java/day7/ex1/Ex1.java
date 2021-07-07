@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ex1 {
+public class Ex1 {
     public static void main(String[] args) {
         File file = new File("C:\\just_random_file.txt");
         Scanner myReader = null;
