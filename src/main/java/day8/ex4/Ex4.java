@@ -20,9 +20,17 @@ class BankAccount {
 }
 
 class CheckingAccount extends BankAccount {
+    public int insufficientFundsFee;
 
+    public void processCheck() {
+
+    }
 }
 
 class SavingsAccount extends BankAccount {
+    public int annualInterestRate;
 
+    public void depositMonthlyInterest() {
+        balance += balance * (annualInterestRate / 100);
+    }
 }
