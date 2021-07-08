@@ -1,6 +1,6 @@
-package day9.ex3;
+package day9.ex4;
 
-public class DemoThread1 implements Runnable {
+public class DemoThread1 extends Thread{
 
     public static void main(String[] args) {
         DemoThread1 t1 = new DemoThread1();
@@ -12,12 +12,11 @@ public class DemoThread1 implements Runnable {
     public DemoThread1() {
         // working just with run();
 
-        DemoThread1 rc = new DemoThread1();
+        day9.ex3.DemoThread1 rc = new day9.ex3.DemoThread1();
         Thread t = new Thread(rc);
         t.start();
     }
 
-    @Override
     public void run() {
         System.out.println("running child Thread in loop : ");
         for (int i=1; i <= 10; i++){
