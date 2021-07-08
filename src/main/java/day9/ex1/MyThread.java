@@ -1,4 +1,4 @@
-package day9.ex2;
+package day9.ex1;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,15 +19,18 @@ class ThreadTimeSleep extends Thread {
 
     public void run() {
         System.out.println("Running " + threadName);
-        printDateTime();
-        // raised an error
-        // Thread.sleep(10000);
-        printDateTime();
+        try {
+            printDateTime();
+            Thread.sleep(10000);
+            printDateTime();
+        } catch (InterruptedException e) {
+            System.out.println("Thread " + threadName + " interrupted.");
+        }
     }
 }
 
 
-class MyThread {
+public class MyThread {
     public static void main(String[] args) {
         ThreadTimeSleep tt = new ThreadTimeSleep("MyThread");
         tt.start();
