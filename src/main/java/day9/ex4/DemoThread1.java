@@ -12,7 +12,7 @@ public class DemoThread1 extends Thread{
     public DemoThread1() {
         // working just with run();
 
-        day9.ex3.DemoThread1 rc = new day9.ex3.DemoThread1();
+        DemoThread1 rc = new DemoThread1();
         Thread t = new Thread(rc);
         t.start();
     }
