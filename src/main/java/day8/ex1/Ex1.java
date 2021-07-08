@@ -9,10 +9,14 @@ public class Ex1 {
             System.out.print("Which exception you want to catch? (A, B, C) ");
             String exceptionName = sc.next();
             switch (exceptionName) {
-                case "C" -> throw new ExceptionC("Exception C was thrown");
-                case "B" -> throw new ExceptionB("Exception B was thrown");
-                case "A" -> throw new ExceptionA("Exception A was thrown");
-                default -> throw new Exception("Your choice is wrong!");
+                case "C":
+                    throw new ExceptionC("Exception C was thrown");
+                case "B":
+                    throw new ExceptionB("Exception B was thrown");
+                case "A":
+                    throw new ExceptionA("Exception A was thrown");
+                default:
+                    throw new Exception("Your choice is wrong!");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
