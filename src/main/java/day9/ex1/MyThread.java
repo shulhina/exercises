@@ -32,7 +32,7 @@ class ThreadTimeSleep extends Thread {
 
 public class MyThread {
     public static void main(String[] args) {
-        ThreadTimeSleep tt = new ThreadTimeSleep("MyThread");
-        tt.start();
+        ThreadTimeSleep t1 = new ThreadTimeSleep("MyThread");
+        t1.start();
     }
 }
