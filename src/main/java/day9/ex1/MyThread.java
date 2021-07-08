@@ -19,13 +19,13 @@ class ThreadTimeSleep extends Thread {
 
     public void run() {
         System.out.println("Running " + threadName);
+        printDateTime();
         try {
-            printDateTime();
             Thread.sleep(10000);
-            printDateTime();
         } catch (InterruptedException e) {
             System.out.println("Thread " + threadName + " interrupted.");
         }
+        printDateTime();
     }
 }
 

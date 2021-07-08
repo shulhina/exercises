@@ -4,13 +4,16 @@ class MyThread extends Thread{
     public static void main(String[] args) {
         DemoThread1 ex1 = new DemoThread1();
         Thread t1 = new Thread(ex1);
-        t1.setPriority(1);
         t1.start();
 
+
+/*
         DemoThread1 ex2 = new DemoThread1();
         Thread t2 = new Thread(ex2);
         t2.setPriority(2);
         t2.start();
+*/
+
 
 /*
         DemoThread1 ex3 = new DemoThread1();
