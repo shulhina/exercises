@@ -59,6 +59,7 @@ public class TelephoneNumberWordGenerator {
                     result.append(casePhone.charAt(index));
                     break;
                 case "9":
+                    index = random.nextInt(4);
                     casePhone = "WXYZ";
                     result.append(casePhone.charAt(index));
                     break;
