@@ -19,8 +19,6 @@ public class Ex2 {
 
         String newfileName = filePath.substring(0, filePath.lastIndexOf("\\") + 1) + fileDomain + "_copy." + extension;
 
-        System.out.println(newfileName);
-
         BufferedWriter duplicateFile = new BufferedWriter(new FileWriter(newfileName));
 
         String curLineContent;

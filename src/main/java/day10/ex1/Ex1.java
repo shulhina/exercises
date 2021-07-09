@@ -27,11 +27,9 @@ public class Ex1 {
             System.out.println("Output: " + output);
             dos.writeBytes(output);
 
-        }
-        catch (FileNotFoundException fnfe) {
+        } catch (FileNotFoundException fnfe) {
             System.out.println("File not found" + fnfe);
-        }
-        catch (IOException ioe) {
+        } catch (IOException ioe) {
             System.out.println("Error while writing to file" + ioe);
         }
 
