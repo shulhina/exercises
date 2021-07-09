@@ -4,6 +4,7 @@ package day7.ex3;
 import java.util.Scanner;
 
 class MyCalculator {
+
     long power(int a, int b) throws Exception {
 
         long result;

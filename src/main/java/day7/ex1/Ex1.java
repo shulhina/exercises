@@ -9,7 +9,7 @@ public class Ex1 {
         File file = new File("C:\\just_random_file.txt");
         Scanner myReader = null;
         try {
-            myReader = new Scanner(file);
+             myReader = new Scanner(file);
         } catch (FileNotFoundException e) {
             System.out.println("Something went wrong: " + e.getMessage());
         }
