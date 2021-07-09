@@ -9,15 +9,12 @@ public class TelephoneNumberWordGenerator {
         String filePath = "C:\\Users\\yelyzaveta_shulhina\\IdeaProjects\\exe\\src\\main\\java\\day10\\ex4\\OriginalPhoneNumber.txt";
         String newfilePath = "C:\\Users\\yelyzaveta_shulhina\\IdeaProjects\\exe\\src\\main\\java\\day10\\ex4\\EncodedPhoneNumber.txt";
 
-
         BufferedReader file = new BufferedReader(new FileReader(filePath));
-
-        BufferedWriter duplicateFile;
-            duplicateFile = new BufferedWriter(new FileWriter(newfilePath));
+        BufferedWriter encodedFile = new BufferedWriter(new FileWriter(newfilePath));
 
         String curLineContent;
         while ((curLineContent = file.readLine()) != null) {
-            duplicateFile.write(curLineContent + System.getProperty("line.separator"));
+            encodedFile.write(numberWordGenerator(phoneInputValidation(curLineContent)));
             System.out.println(numberWordGenerator(phoneInputValidation(curLineContent)));
         }
     }
@@ -33,8 +30,6 @@ public class TelephoneNumberWordGenerator {
             int index = random.nextInt(3);
             String casePhone;
             switch (number) {
-                case "1":
-                    break;
                 case "2":
                     casePhone = "ABC";
                     result.append(casePhone.charAt(index));
@@ -67,7 +62,8 @@ public class TelephoneNumberWordGenerator {
                     casePhone = "WXYZ";
                     result.append(casePhone.charAt(index));
                     break;
-
+                default:
+                    break;
 
             }
         }
