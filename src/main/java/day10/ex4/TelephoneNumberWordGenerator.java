@@ -1,16 +1,34 @@
 package day10.ex4;
 
+import java.io.*;
 import java.util.Random;
 import java.util.Scanner;
 
 public class TelephoneNumberWordGenerator {
     public void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
+/*        Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number to encode: ");
         String number = sc.next();
+*/
+        String filePath = "C:\\Users\\yelyzaveta_shulhina\\IdeaProjects\\exe\\src\\main\\java\\day10\\ex4\\OriginalPhoneNumber.txt";
+
+        BufferedReader file = null;
+        try {
+            file = new BufferedReader(new FileReader(filePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         number = phoneInputValidation(number);
         System.out.println(numberWordGenerator(number));
+
+        BufferedWriter duplicateFile = null;
+        try {
+            duplicateFile = new BufferedWriter(new FileWriter(newfileName));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private String phoneInputValidation(String phoneNumber) {
