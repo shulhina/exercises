@@ -4,11 +4,17 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class TelephoneNumberWordGenerator {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number to encode!");
+        System.out.print("Enter a number to encode: ");
         String number = sc.next();
+
+        number = phoneInputValidation(number);
         System.out.println(numberWordGenerator(number));
+    }
+
+    private String phoneInputValidation(String phoneNumber) {
+        return phoneNumber.replaceAll("\\D", "");
     }
 
     public static String numberWordGenerator(String phoneNumber) {
