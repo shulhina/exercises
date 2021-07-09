@@ -2,36 +2,27 @@ package day10.ex4;
 
 import java.io.*;
 import java.util.Random;
-import java.util.Scanner;
 
 public class TelephoneNumberWordGenerator {
-    public void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-/*        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number to encode: ");
-        String number = sc.next();
-*/
         String filePath = "C:\\Users\\yelyzaveta_shulhina\\IdeaProjects\\exe\\src\\main\\java\\day10\\ex4\\OriginalPhoneNumber.txt";
+        String newfilePath = "C:\\Users\\yelyzaveta_shulhina\\IdeaProjects\\exe\\src\\main\\java\\day10\\ex4\\EncodedPhoneNumber.txt";
 
-        BufferedReader file = null;
-        try {
-            file = new BufferedReader(new FileReader(filePath));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
 
-        number = phoneInputValidation(number);
-        System.out.println(numberWordGenerator(number));
+        BufferedReader file = new BufferedReader(new FileReader(filePath));
 
-        BufferedWriter duplicateFile = null;
-        try {
-            duplicateFile = new BufferedWriter(new FileWriter(newfileName));
-        } catch (IOException e) {
-            e.printStackTrace();
+        BufferedWriter duplicateFile;
+            duplicateFile = new BufferedWriter(new FileWriter(newfilePath));
+
+        String curLineContent;
+        while ((curLineContent = file.readLine()) != null) {
+            duplicateFile.write(curLineContent + System.getProperty("line.separator"));
+            System.out.println(numberWordGenerator(phoneInputValidation(curLineContent)));
         }
     }
 
-    private String phoneInputValidation(String phoneNumber) {
+    private static String phoneInputValidation(String phoneNumber) {
         return phoneNumber.replaceAll("\\D", "");
     }
 
