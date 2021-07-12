@@ -1,6 +1,7 @@
 package day11.ex6;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Ex6 {
     public static void main(String[] args) {
@@ -14,21 +15,37 @@ public class Ex6 {
                 new Invoice("56", "Jig saw", 21, 11.00),
                 new Invoice("3", "Wrench", 34, 7.50)
         };
-        Arrays.stream(invoices).sorted().forEach(System.out::println);
+
+        Arrays.stream(invoices).sorted(Comparator.comparing(Invoice::getPartDescription)).forEach(System.out::println);
     }
 }
 
 class Invoice {
+
     String partNumber;
     String partDescription;
     int quantity;
     double pricePerItem;
 
-    Invoice(String partNumber, String partDescription, int quantity, double pricePerItem){
+    Invoice(String partNumber, String partDescription, int quantity, double pricePerItem) {
         this.partNumber = partNumber;
         this.partDescription = partDescription;
         this.quantity = quantity;
         this.pricePerItem = pricePerItem;
     }
 
+
+    @Override
+    public String toString() {
+        return "Invoice{" +
+                "partNumber='" + partNumber + '\'' +
+                ", partDescription='" + partDescription + '\'' +
+                ", quantity=" + quantity +
+                ", pricePerItem=" + pricePerItem +
+                '}';
+    }
+
+    public String getPartDescription() {
+        return partDescription;
+    }
 }
