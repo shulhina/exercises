@@ -33,20 +33,3 @@ public class Ex1 {
     }
 }
 
-class ExceptionA extends Exception {
-    ExceptionA(String s) {
-        super(s);
-    }
-}
-
-class ExceptionB extends ExceptionA {
-    ExceptionB(String s) {
-        super(s);
-    }
-}
-
-class ExceptionC extends ExceptionB {
-    ExceptionC(String s) {
-        super(s);
-    }
-}

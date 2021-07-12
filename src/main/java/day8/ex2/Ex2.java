@@ -10,9 +10,3 @@ public class Ex2 {
     }
 }
 
-class SomeClass {
-
-    public SomeClass() throws Exception {
-        throw new Exception("Exception in SomeClass constructor!");
-    }
-}

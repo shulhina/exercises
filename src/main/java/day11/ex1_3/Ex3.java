@@ -10,7 +10,3 @@ public class Ex3 {
     }
 }
 
-@FunctionalInterface
-interface ArrayInterface {
-    ArrayList ArrayList(int initialCapacity);
-}
