@@ -1,6 +1,4 @@
-package day12.exercise2;
-
-
+import day12.exercise2.Person;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
