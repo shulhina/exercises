@@ -2,7 +2,7 @@ package day5.ex2;
 
 import java.util.Scanner;
 
-// the same as day4.day6.day9.ex1.day9.ex1
+// the same as day4.day6.day9.day11.ex1.day9.day11.ex1
 
 public class Ex2 {
     /**

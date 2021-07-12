@@ -21,6 +21,7 @@ public class Number implements Runnable {
         Number n1 = new Number(2), n2 = new Number(5), n3 = new Number(8);
         Thread t1 = new Thread(n1, "t1)"), t2 = new Thread(n2, "t2"), t3 = new Thread(n3, "t3");
         t1.start();
+        t1.start();
         t2.start();
         t3.start();
         try {
