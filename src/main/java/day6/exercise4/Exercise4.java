@@ -2,7 +2,7 @@ package day6.exercise4;
 
 import java.util.HashSet;
 
-public class Ex4 {
+public class Exercise4 {
     public static void main(String[] args) {
         HashSet<String> setColors1 = new HashSet<>();
         setColors1.add("black");

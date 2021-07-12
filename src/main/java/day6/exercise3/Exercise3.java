@@ -3,7 +3,7 @@ package day6.exercise3;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Ex3 {
+public class Exercise3 {
     public static void main(String[] args) {
         ArrayList<String> colors = new ArrayList<>();
         colors.add("black");

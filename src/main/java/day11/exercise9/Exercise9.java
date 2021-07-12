@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Ex9 {
+public class Exercise9 {
     public static void main(String[] args) {
         List<Integer> listOfGrades = new ArrayList<>();
         Random rand = new Random();

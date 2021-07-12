@@ -2,7 +2,7 @@ package day6.exercise8;
 
 import java.util.*;
 
-public class Ex8 {
+public class Exercise8 {
     public static void main(String[] args) {
         TreeMap<String, Integer> treeMap = new TreeMap();
         treeMap.put("A", 1);

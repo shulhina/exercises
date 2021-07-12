@@ -3,7 +3,7 @@ package day7.exercise2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Ex2 {
+public class Exercise2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter A: ");

@@ -3,7 +3,7 @@ package day11.exercise1_1;
 
 import java.util.Scanner;
 
-public class Ex1 {
+public class Exercise1 {
     public static void main(String[] args) {
         System.out.println("This program multiplies A and B!");
         Scanner sc = new Scanner(System.in);

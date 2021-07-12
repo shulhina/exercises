@@ -2,7 +2,7 @@ package day10.exercise1;
 
 import java.io.*;
 
-public class Ex1 {
+public class Exercise1 {
     public static void main(String[] args) throws IOException {
 
         String fileOut = "C:\\Users\\yelyzaveta_shulhina\\IdeaProjects\\exe\\src\\main\\java\\day10\\day11.ex1\\fileOutput.txt";

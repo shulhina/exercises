@@ -3,7 +3,7 @@ package day11.exercise6;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Ex6 {
+public class Exercise6 {
     public static void main(String[] args) {
         Invoice[] invoices = {
                 new Invoice("83", "Electric sander", 7, 57.98),

@@ -1,6 +1,6 @@
 package day5.exercise1;
 
-public class Ex1 {
+public class Exercise1 {
 
     /**
      * Returns the 1st index of the maximum character.

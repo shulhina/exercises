@@ -2,7 +2,7 @@ package day6.exercise5;
 
 import java.util.TreeSet;
 
-public class Ex5 {
+public class Exercise5 {
     public static void main(String[] args) {
         TreeSet<Integer> treeSet = new TreeSet<>();
         treeSet.add(9);

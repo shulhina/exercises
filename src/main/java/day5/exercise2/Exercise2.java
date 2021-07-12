@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // the same as day4.day6.day9.day11.ex1.day9.day11.ex1
 
-public class Ex2 {
+public class Exercise2 {
     /**
      * Determines if a user input string is a palindrome
      * (string that has the same value if it is reversed).
@@ -33,7 +33,7 @@ public class Ex2 {
 
         Scanner scan = new Scanner(System.in);
         String input = scan.next();
-        Ex2 ex = new Ex2();
+        Exercise2 ex = new Exercise2();
 
         if (ex.checkCharacters(input)) {
             System.out.println("Valid");

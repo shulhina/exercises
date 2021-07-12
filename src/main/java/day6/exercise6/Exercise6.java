@@ -3,7 +3,7 @@ package day6.exercise6;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Ex6 {
+public class Exercise6 {
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap();
         map.put("One", 1);

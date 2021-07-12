@@ -2,7 +2,7 @@ package day10.exercise2;
 
 import java.io.*;
 
-public class Ex2 {
+public class Exercise2 {
     /**
      * Creates a copy of the file with a different name.
      */

@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
-public class Ex8 {
+public class Exercise8 {
     public static void main(String[] args) {
         List<Character> listOfRandomCharacters = new ArrayList<>();
         Random r = new Random();

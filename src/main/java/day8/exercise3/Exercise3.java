@@ -1,6 +1,6 @@
 package day8.exercise3;
 
-public class Ex3 {
+public class Exercise3 {
     public static void main(String[] args) {
         try {
             someMethod();
