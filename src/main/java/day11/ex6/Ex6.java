@@ -16,36 +16,61 @@ public class Ex6 {
                 new Invoice("3", "Wrench", 34, 7.50)
         };
 
-        Arrays.stream(invoices).sorted(Comparator.comparing(Invoice::getPartDescription)).forEach(System.out::println);
+        System.out.println("Sorting the Invoice objects by partDescription: ");
+        // sorting the Invoice objects by partDescription
+        Arrays.stream(invoices)
+                .sorted(Comparator.comparing(Invoice::getPartDescription))
+                .forEach(System.out::println);
+
+        System.out.println("\nSorting the Invoice objects by pricePerItem: ");
+        // sorting the Invoice objects by pricePerItem
+        Arrays.stream(invoices)
+                .sorted(Comparator.comparing(Invoice::getPricePerItem))
+                .forEach(System.out::println);
+
+        System.out.println("\nMapping each Invoice to its partDescription and quantity: ");
+        // mapping each Invoice to its partDescription and quantity,
+        // sorting the results by quantity
+        Arrays.stream(invoices)
+                .sorted(Comparator.comparing(Invoice::getQuantity))
+                .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity())
+                .forEach(System.out::println);
+
+        System.out.println("\nMapping each Invoice to its partDescription and the value of the Invoice: ");
+        // mapping each Invoice to its partDescription
+        // and the value of the Invoice (i.e., quantity * pricePerItem).
+        // Ordering the results by Invoice value.
+        Arrays.stream(invoices)
+                .sorted(Comparator.comparing(invoice1 -> invoice1.getQuantity() * invoice1.getPricePerItem()))
+                .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity() * invoice.getPricePerItem())
+                .forEach(System.out::println);
+
+
+        System.out.println("\nMapping each Invoice to its partDescription and the value of the Invoice in range (200-500): ");
+        // mapping each Invoice to its partDescription
+        // and the value of the Invoice (i.e., quantity * pricePerItem).
+        // Ordering the results by Invoice value.
+        Arrays.stream(invoices)
+                .sorted(Comparator.comparing(invoice1 -> invoice1.getQuantity() * invoice1.getPricePerItem()))
+                .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity() * invoice.getPricePerItem())
+
+   //             .filter(invoice -> invoice > 200 && 500 > invoice)
+
+                .forEach(System.out::println);
+
+
+        System.out.println("\nFinding any one Invoice in which the partDescription contains the word \"saw\"");
+        // Finding any one Invoice in which the partDescription contains the word "saw"
+        Arrays.stream(invoices)
+                .sorted(Comparator.comparing(invoice1 -> invoice1.getQuantity() * invoice1.getPricePerItem()))
+                .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity() * invoice.getPricePerItem())
+
+    //            .findAny(invoice -> invoice.())
+
+                .forEach(System.out::println);
+
+
     }
-}
-
-class Invoice {
-
-    String partNumber;
-    String partDescription;
-    int quantity;
-    double pricePerItem;
-
-    Invoice(String partNumber, String partDescription, int quantity, double pricePerItem) {
-        this.partNumber = partNumber;
-        this.partDescription = partDescription;
-        this.quantity = quantity;
-        this.pricePerItem = pricePerItem;
-    }
 
 
-    @Override
-    public String toString() {
-        return "Invoice{" +
-                "partNumber='" + partNumber + '\'' +
-                ", partDescription='" + partDescription + '\'' +
-                ", quantity=" + quantity +
-                ", pricePerItem=" + pricePerItem +
-                '}';
-    }
-
-    public String getPartDescription() {
-        return partDescription;
-    }
 }
