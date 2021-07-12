@@ -11,7 +11,7 @@ public class Ex1 {
         System.out.print("Enter B: ");
         double B = sc.nextDouble();
 
-        MyInterface lambdaExample = (double a, double b) -> a * b;
+        MyInterface lambdaExample = (a, b) -> a * b;
         System.out.println("A * B: " + lambdaExample.multiply(A, B));
     }
 }
