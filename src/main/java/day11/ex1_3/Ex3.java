@@ -5,12 +5,12 @@ import java.util.ArrayList;
 
 public class Ex3 {
     public static void main(String[] args) {
-        MyInterface lambdaExample = ArrayList::new;
-        System.out.println(lambdaExample.ArrayList());
+        ArrayInterface lambdaExample = ArrayList::new;
+        System.out.println(lambdaExample.ArrayList(5));
     }
 }
 
 @FunctionalInterface
-interface MyInterface {
-    ArrayList ArrayList();
+interface ArrayInterface {
+    ArrayList ArrayList(int initialCapacity);
 }

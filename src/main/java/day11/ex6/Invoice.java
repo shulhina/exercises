@@ -13,7 +13,6 @@ class Invoice {
         this.pricePerItem = pricePerItem;
     }
 
-
     @Override
     public String toString() {
         return "Invoice{" +
@@ -26,10 +25,6 @@ class Invoice {
 
     public String getPartDescription() {
         return partDescription;
-    }
-
-    public String getPartNumber() {
-        return partNumber;
     }
 
     public int getQuantity() {

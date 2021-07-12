@@ -63,9 +63,5 @@ public class Ex6 {
                 Arrays.stream(invoices)
                         .filter(x -> x.getPartDescription().contains("saw"))
                         .findAny());
-
-
     }
-
-
 }
