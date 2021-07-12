@@ -52,22 +52,17 @@ public class Ex6 {
         // Ordering the results by Invoice value.
         Arrays.stream(invoices)
                 .sorted(Comparator.comparing(invoice1 -> invoice1.getQuantity() * invoice1.getPricePerItem()))
+                .filter(invoice -> invoice.getQuantity() * invoice.getPricePerItem() > 200 && invoice.getQuantity() * invoice.getPricePerItem() < 500)
                 .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity() * invoice.getPricePerItem())
-
-   //             .filter(invoice -> invoice > 200 && 500 > invoice)
-
                 .forEach(System.out::println);
 
 
         System.out.println("\nFinding any one Invoice in which the partDescription contains the word \"saw\"");
         // Finding any one Invoice in which the partDescription contains the word "saw"
-        Arrays.stream(invoices)
-                .sorted(Comparator.comparing(invoice1 -> invoice1.getQuantity() * invoice1.getPricePerItem()))
-                .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity() * invoice.getPricePerItem())
-
-    //            .findAny(invoice -> invoice.())
-
-                .forEach(System.out::println);
+        System.out.println(
+                Arrays.stream(invoices)
+                        .filter(x -> x.getPartDescription().contains("saw"))
+                        .findAny());
 
 
     }
