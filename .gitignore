@@ -28,6 +28,7 @@ hs_err_pid*
 /target/
 bin
 exercises.iml
+/exercises.iml/
 
 # maven
 pom.xml.tag
