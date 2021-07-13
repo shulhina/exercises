@@ -41,7 +41,7 @@ public class Person<T> {
     }
 
     public void setWeight(int weight) {
-        if(weight<= 0) {
+        if(weight< 0) {
             throw new NumberFormatException ("Weight must be positive.");
         }
         this.weight = weight;
@@ -60,7 +60,7 @@ public class Person<T> {
     }
 
     public void setHeight(int height) {
-        if(height<= 0) {
+        if(height< 0) {
             throw new NumberFormatException ("Height must be positive.");
         }
         this.height = height;
