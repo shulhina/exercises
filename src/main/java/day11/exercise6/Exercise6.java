@@ -18,20 +18,23 @@ public class Exercise6 {
 
         System.out.println("Sorting the Invoice objects by partDescription: ");
         // sorting the Invoice objects by partDescription
-        Arrays.stream(invoices)
+        Arrays
+                .stream(invoices)
                 .sorted(Comparator.comparing(Invoice::getPartDescription))
                 .forEach(System.out::println);
 
         System.out.println("\nSorting the Invoice objects by pricePerItem: ");
         // sorting the Invoice objects by pricePerItem
-        Arrays.stream(invoices)
+        Arrays
+                .stream(invoices)
                 .sorted(Comparator.comparing(Invoice::getPricePerItem))
                 .forEach(System.out::println);
 
         System.out.println("\nMapping each Invoice to its partDescription and quantity: ");
         // mapping each Invoice to its partDescription and quantity,
         // sorting the results by quantity
-        Arrays.stream(invoices)
+        Arrays
+                .stream(invoices)
                 .sorted(Comparator.comparing(Invoice::getQuantity))
                 .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity())
                 .forEach(System.out::println);
@@ -40,7 +43,8 @@ public class Exercise6 {
         // mapping each Invoice to its partDescription
         // and the value of the Invoice (i.e., quantity * pricePerItem).
         // Ordering the results by Invoice value.
-        Arrays.stream(invoices)
+        Arrays
+                .stream(invoices)
                 .sorted(Comparator.comparing(invoice1 -> invoice1.getQuantity() * invoice1.getPricePerItem()))
                 .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity() * invoice.getPricePerItem())
                 .forEach(System.out::println);
@@ -50,7 +54,8 @@ public class Exercise6 {
         // mapping each Invoice to its partDescription
         // and the value of the Invoice (i.e., quantity * pricePerItem).
         // Ordering the results by Invoice value.
-        Arrays.stream(invoices)
+        Arrays
+                .stream(invoices)
                 .sorted(Comparator.comparing(invoice1 -> invoice1.getQuantity() * invoice1.getPricePerItem()))
                 .filter(invoice -> invoice.getQuantity() * invoice.getPricePerItem() > 200 && invoice.getQuantity() * invoice.getPricePerItem() < 500)
                 .map(invoice -> invoice.getPartDescription() + " " + invoice.getQuantity() * invoice.getPricePerItem())
