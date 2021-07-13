@@ -34,6 +34,7 @@ class MyCalculator {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
+            sc.close();
         }
     }
 

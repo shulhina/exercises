@@ -8,6 +8,7 @@ public class Exercise1 {
             Scanner sc = new Scanner(System.in);
             System.out.print("Which exception you want to catch? (A, B, C) ");
             String exceptionName = sc.next();
+            sc.close();
             switch (exceptionName) {
                 case "C":
                     throw new ExceptionC("Exception C was thrown");

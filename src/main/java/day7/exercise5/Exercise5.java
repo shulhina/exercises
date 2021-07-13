@@ -14,7 +14,7 @@ public class Exercise5 {
             int totalOvers = reader.read();
             int runRate = runsScored / totalOvers;
             System.out.println("Run Rate: " + runRate);
-
+            reader.close();
         } catch (ArithmeticException | NumberFormatException | IOException e) {
             if (e instanceof ArithmeticException) {
                 System.out.println("java.lang.ArithmeticException: / by zero");

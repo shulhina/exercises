@@ -13,6 +13,7 @@ public class Exercise7 {
         Arrays.stream(sentenceList)
                 .distinct()
                 .forEach(System.out::println);
+        sc.close();
     }
 }
 

@@ -14,5 +14,7 @@ public class Exercise1 {
 
         MyInterface lambdaExample = (a, b) -> a * b;
         System.out.println("A * B: " + lambdaExample.multiply(A, B));
+
+        sc.close();
     }
 }

@@ -12,6 +12,7 @@ public class Exercise2 {
             System.out.print("Enter B: ");
             int B = sc.nextInt();
             System.out.println("A / B: " + (A / B));
+            sc.close();
         } catch (ArithmeticException | InputMismatchException e) {
             if (e instanceof ArithmeticException) {
                 System.out.println("java.lang.ArithmeticException: / by zero");

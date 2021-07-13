@@ -15,6 +15,7 @@ public class Exercise4 {
         } catch (InvalidAgeRange invalidAgeRange) {
             invalidAgeRange.printStackTrace();
         }
+        sc.close();
     }
 
     public static void inputValidation(int age, String name) throws InvalidAgeRange {

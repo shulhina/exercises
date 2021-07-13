@@ -19,5 +19,8 @@ public class Exercise1 {
             data.append("\n");
         }
         System.out.println(data);
+        if (myReader != null) {
+            myReader.close();
+        }
     }
 }
